@@ -1,0 +1,94 @@
+﻿<Window x:Class="Practica1AJGE.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica1AJGE"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="#F1F5F9">
+        <!-- Tarjeta central clara -->
+        <Border Width="360" 
+            Background="#FFFFFF" 
+            BorderBrush="#CBD5E1" 
+            BorderThickness="1.5" 
+            CornerRadius="20" 
+            Padding="28" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center">
+
+            <StackPanel>
+                <!-- Cabecera -->
+                <TextBlock Text="PORTAL DE VIDEOJUEGOS" 
+                       Foreground="#4F46E5" 
+                       FontSize="13" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,4"/>
+
+                <TextBlock Text="Iniciar Sesión" 
+                       Foreground="#0F172A" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,22"/>
+
+                <!-- Campo Usuario -->
+                <TextBlock Text="Usuario" 
+                       Foreground="#64748B" 
+                       FontSize="12" 
+                       Margin="0,0,0,6"/>
+                <TextBox x:Name="txtUsuario" 
+                     Height="36" 
+                     Background="#F8FAFC" 
+                     Foreground="#0F172A" 
+                     BorderBrush="#CBD5E1" 
+                     BorderThickness="1"
+                     Padding="8,4" 
+                     Margin="0,0,0,16" 
+                     VerticalContentAlignment="Center"/>
+
+                <!-- Campo Contraseña -->
+                <TextBlock Text="Contraseña" 
+                       Foreground="#64748B" 
+                       FontSize="12" 
+                       Margin="0,0,0,6"/>
+                <PasswordBox x:Name="txtPassword" 
+                         Height="36" 
+                         Background="#F8FAFC" 
+                         Foreground="#0F172A" 
+                         BorderBrush="#CBD5E1" 
+                         BorderThickness="1"
+                         Padding="8,4" 
+                         Margin="0,0,0,22" 
+                         VerticalContentAlignment="Center"/>
+
+                <!-- Botón Acceder -->
+                <Button x:Name="btnAcceder" 
+                    Content="Acceder al Portal" 
+                    Click="btnAcceder_Click" 
+                    Height="38" 
+                    Background="#4F46E5" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    FontSize="13" 
+                    BorderThickness="0" 
+                    Cursor="Hand" 
+                    Margin="0,0,0,10"/>
+
+                <!-- Botón Salir -->
+                <Button x:Name="btnSalir" 
+                    Content="Salir de la aplicación" 
+                    Click="btnSalir_Click" 
+                    Height="32" 
+                    Background="#F8FAFC" 
+                    Foreground="#DC2626" 
+                    FontWeight="SemiBold" 
+                    FontSize="12" 
+                    BorderThickness="1" 
+                    BorderBrush="#CBD5E1" 
+                    Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

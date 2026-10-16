@@ -8,4 +8,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="cover_gta6.jpg" />
+    <None Remove="easportsfc27.jpg" />
+    <None Remove="Images\cover.cyberpunk-2077.jpg" />
+    <None Remove="Images\cover_gta6.jpg" />
+    <None Remove="Images\easportsfc27.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\cover.cyberpunk-2077.jpg" />
+    <Resource Include="Images\cover_gta6.jpg" />
+    <Resource Include="Images\easportsfc27.jpg" />
+  </ItemGroup>
+
 </Project>

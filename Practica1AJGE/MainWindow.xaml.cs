@@ -1,24 +1,26 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Practica1AJGE
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        // Requisito: Botón de "Cerrar Sesión" que devuelve al formulario de login
+        private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 login = new Window1();
+            login.Show();
+            this.Close(); // Cierra el portal, dejando solo el login activo
+        }
+
+        // Requisito: Botón "Salir" para cerrar toda la aplicación
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
